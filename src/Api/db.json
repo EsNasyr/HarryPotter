@@ -1,10 +1,212 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  "characters": [
+    {
+      "name": "Гарри Поттер",
+      "gender": "Мужской",
+      "house": "Гриффиндор",
+      "dateOfBirth": "31-07-1980",
+      "wizard": "Колдун",
+      "blood": "Полукровка",
+      "eyes": "Зеленый",
+      "hair": "Черный",
+      "activity": "Студент",
+      "actor": "Даниэль Радклифф",
+      "img": "https://www.vokrug.tv/pic/person/6/d/b/4/6db489c474b8cdef6c848333ae885d48.jpeg",
+      "alive": "Жив",
+      "id": "1"
+    },
+    {
+      "name": "Гермиона Грейнджер",
+      "gender": "Женский",
+      "house": "Гриффиндор",
+      "dateOfBirth": "19-09-1979",
+      "wizard": "Ведьма",
+      "blood": "Маглорожденная",
+      "eyes": "Коричневый",
+      "hair": "Коричневый",
+      "activity": "Студент",
+      "actor": "Эмма Уотсон",
+      "img": "http://hp-api.herokuapp.com/images/hermione.jpeg",
+      "alive": "Жива",
+      "id": "2"
+    },
+    {
+      "name": "Рональд Уизли",
+      "gender": "Мужской",
+      "house": "Гриффиндор",
+      "dateOfBirth": "01-03-1980",
+      "wizard": "Колдун",
+      "blood": "Чистокровный",
+      "eyes": "Синие",
+      "hair": "Рыжие",
+      "activity": "Студент",
+      "actor": "Руперт Гринт",
+      "img": "http://hp-api.herokuapp.com/images/ron.jpg",
+      "alive": "Жив",
+      "id": "3"
+    },
+    {
+      "name": "Драко Малфой",
+      "gender": "Мужской",
+      "house": "Слизерин",
+      "dateOfBirth": "05-06-1980",
+      "wizard": "Колдун",
+      "blood": "Чистокровный",
+      "eyes": "Серые",
+      "hair": "Светлые",
+      "activity": "Студент",
+      "actor": "Том Фелтон",
+      "img": "http://hp-api.herokuapp.com/images/draco.jpg",
+      "alive": "Жив",
+      "id": "4"
+    },
+    {
+      "name": "Минерва Макгонаголл",
+      "gender": "Женский",
+      "house": "Гриффиндор",
+      "dateOfBirth": "04-10-1925",
+      "wizard": "Ведьма",
+      "blood": "Чистокровная",
+      "eyes": "Коричневые",
+      "hair": "black",
+      "activity": "Учитель",
+      "actor": "Dame Maggie Smith",
+      "img": "https://static.wikia.nocookie.net/harrypotter/images/6/63/Promo_mcgonagall_pa.jpg/revision/latest/top-crop/width/360/height/450?cb=20141106100843&path-prefix=ru",
+      "alive": "Жива",
+      "id": "5"
+    },
+    {
+      "name": "Седрик Диггори",
+      "gender": "Мужской",
+      "house": "Пуффендуй",
+      "dateOfBirth": "1977",
+      "wizard": "Колдун",
+      "blood": "Чистокровный",
+      "eyes": "Серые",
+      "hair": "Коричневые",
+      "activity": "Студент",
+      "actor": "Роберт Паттисон",
+      "img": "http://hp-api.herokuapp.com/images/cedric.png",
+      "alive": "Мертв",
+      "id": "6"
+    },
+    {
+      "name": "Чо Чан",
+      "gender": "Женский",
+      "house": "Коктевран",
+      "dateOfBirth": "1977",
+      "wizard": "Ведьма",
+      "blood": "Чистокровная",
+      "eyes": "Коричневые",
+      "hair": "Черные",
+      "activity": "Студент",
+      "actor": "Кети Лен",
+      "alive": "Жива",
+      "img": "http://hp-api.herokuapp.com/images/cho.jpg",
+      "id": "7"
+    },
+    {
+      "name": "Северус Снейп",
+      "gender": "Мужской",
+      "house": "Слизерин",
+      "dateOfBirth": "09-01-1960",
+      "wizard": "Колдун",
+      "blood": "Полукровка",
+      "eyes": "Черные",
+      "hair": "Черные",
+      "activity": "Учитель",
+      "actor": "Алан Рикман",
+      "alive": "Мертв",
+      "img": "http://hp-api.herokuapp.com/images/snape.jpg",
+      "id": "8"
+    },
+    {
+      "name": "Рубеус Хагрид",
+      "gender": "Мужской",
+      "house": "Гриффиндор",
+      "dateOfBirth": "06-12-1928",
+      "wizard": "Колдун",
+      "blood": "Полукровка",
+      "eyes": "Черные",
+      "hair": "Черные",
+      "activity": "Учитель",
+      "actor": "Робби Колтрэн",
+      "alive": "Жив",
+      "img": "http://hp-api.herokuapp.com/images/hagrid.png",
+      "id": "9"
+    },
+    {
+      "name": "Неввил Лолгопупс",
+      "gender": "Мужской",
+      "house": "Гриффиндор",
+      "dateOfBirth": "30-07-1980",
+      "wizard": "Колдун",
+      "blood": "Чистокровный",
+      "eyes": "Черные",
+      "hair": "Черные",
+      "actor": "Матью Левис",
+      "alive": "Жив",
+      "img": "http://hp-api.herokuapp.com/images/neville.jpg",
+      "id": "10"
+    }
+  ],
+  "users": [
+    {
+      "name": "Nasyr",
+      "surname": "Esenbaev",
+      "email": "nasa3@gmail.com",
+      "password": "1234567890",
+      "id": "1"
+    },
+    {
+      "email": "Nasa1234@gmail.com",
+      "password": "$2a$10$I3XBIPnIeiSRzwuDU01ttus15dI3mi52EQPxxZZY/7Gcsq/4uo832",
+      "name": "Nasyr",
+      "surname": "Esenbaev",
+      "id": "qHC-JMl"
+    },
+    {
+      "email": "Nasyr2@gmail.com",
+      "password": "$2a$10$GWvZXow7joegPt/dHpF6V..u.bblGBjS3gEqW.p4C12otInmq5koy",
+      "name": "Nasyr",
+      "surname": "Esenbaev",
+      "id": "nmk_grT"
+    },
+    {
+      "email": "Nasyr3@gmail.com",
+      "password": "$2a$10$RMBfcLb.E2PvDLHacMBs2.x/BeC2eZNGZ.T68vqnCtEVBCJTEn2Xe",
+      "name": "Насыр",
+      "surname": "Эсенбаев",
+      "id": "VAA2x4o"
+    },
+    {
+      "email": "qwerty1@mail.ru",
+      "password": "$2a$10$lrH9PnQC2nriSIoCii2k0uHiS5QK5lhFGM7qzT2tJOAqTBWwbJ7eC",
+      "name": "ieugwv",
+      "surname": "qw[oihvepq",
+      "id": "UxrR21c"
+    },
+    {
+      "email": "Nasyr1234@gmail.com",
+      "password": "$2a$10$xy2g.2MSMW6G85aqW/BjQOEAroie/HWnhIjz4/G3au66WuJt2uvpC",
+      "name": "Насыр",
+      "surname": "Эсенбаев",
+      "id": "pyqmNnj"
+    },
+    {
+      "email": "Nasyr4@gmail.com",
+      "password": "$2a$10$pdyP.2KIuaio51z9LYpI4.Rz6M8EXccvivNky9yUc5mT2HDy1T9SO",
+      "name": "Nasyr",
+      "surname": "Esenbaev",
+      "id": "9KJug4E"
+    },
+    {
+      "email": "EsNasyr@gmail.com",
+      "password": "$2a$10$HIpI4/TH8qbBl8vYNz1zUO3HuIB9RDrzP348cUxD5e6cHNYxtyLYy",
+      "name": "Nasyr",
+      "surname": "Esenbaev",
+      "id": "dTDNHYJ"
+    }
+  ],
+  "carts": []
 }

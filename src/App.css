@@ -1,38 +1,420 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*App*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.contentWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1137px;
+    position: relative;
+    left: 204px;
+    bottom: 8px;
+    height: 100vh;
+}
+section{
+    background-color: #0A1929;
+    width: 100%;
+    top: 0;
+    display: block;
+}
+.projectTitles{
+    font-size: 35px;
+    text-decoration: underline;
+    color: white;
+    margin-left: 20px;
+}
+.projectDesc{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    margin: 25px;
+}
+.projectItems{
+    background-color: rgb(0, 30, 60);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 20px 0 20px;
+    display: flex;
+}
+.itemsImg{
+    width: 300px;
+}
+/*App*/
+/*Main*/
+.mainImg{
+    max-width: 100%;
+    position: relative;
+    height: 100vh;
+}
+.mainImgContent{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,.6);
+    color: white;
+    bottom: 0;
+}
+.mainImgContentItem{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mainImgContentLogo{
+    position: relative;
+}
+.mainImgContentTitle{
+    font-size: 50px;
+}
+/*2*/
+.mainImg-2{
+    max-width:100%;
+    position: relative;
+    height: 100vh;
+}
+.mainImgContent-2{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,.6);
+    color: white;
+    bottom: 0;
+    top: 2059px;
+}
+.mainImgContentItem-2{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mainImgContentLogo-2{
+    position: relative;
+}
+.mainImgContentTitle-2{
+    font-size: 50px;
+}
+.mainImgContentBtn{
+    width: 250px;
+    height: 50px;
+    background-color: #514a92;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.mainImgContentBtn a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/*2*/
+/*Main*/
+/*Films*/
+.filmsBtn{
+    height: 50px;
+    background-color: #514a92;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.filmsLink{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/*Films*/
+/*Games*/
+.gamesImg {
+    width: 350px;
+    border-radius: 10px;
+}
+.gamesImg-1{
+
+    margin: 10px;
+}
+.gamesTitle{
+    font-size: 35px;
+    color: white;
+
+}
+.gamesBtn{
+    height: 50px;
+    background-color: #514a92;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*Games*/
+/*Things*/
+.thingsTitle{
+    color: white;
+}
+/*Things*/
+/*Characters*/
+.charactersItem{
+    display: flex;
+    flex-wrap: wrap;
+}
+.charactersBlock{
+
+}
+.charItems{
+    background-color: rgb(0, 30, 60);
+    padding: 25px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    margin: 20px 20px;
+    max-width: 610px;
+}
+.charImg{
+    width: 200px;
+    height: 320px;
+    position: relative;
+    top: 10px;
+}
+.charBtn{
+    height: 30px;
+    background-color: #514a92;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.charLink{
+    color: white;
+    text-decoration: none;
+}
+.charInfo{
+    position: relative;
+    left: 20px;
+}
+/*Character*/
+/*Book*/
+.bookContent{
+    display: flex;
+}
+.bookItem{
+    background-color: rgb(0, 30, 60);
+    padding: 25px 40px;
+    border-radius: 10px;
+    color: white;
+    margin: 20px;
+    display: flex;
+}
+.bookImg{
+    width: 300px;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.bookBtn{
+    height: 50px;
+    background-color: #514a92;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: relative;
+    left: 25px;
+    cursor: pointer;
+}
+.booksText{
+    color: white;
+}
+.bookHeader{
+    display: flex;
+}
+.bookBtnOops{
+    padding: 10px;
+    border: 1px solid black;
+    transition: .6s;
+    border-radius: 10px;
+    margin: 0 5px;
+} .bookBtnOops:hover{
+    transition: .6s;
+    background-color: black;
   }
+.bookReg{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+} .bookReg:hover{
+    color: white;
+  }
+/*Book*/
+/*Register*/
+.regForm{
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 30, 60);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.regContent{
+    position: relative;
+    bottom: 10px;
+    right: 10%;
+}
+input{
+    padding: 15px 30px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+    right: 15px;
+}
+/*Register*/
+/*Nav*/
+.aside{
+  width: 212px;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #0A1929;
+  position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.asideLink {
+  text-decoration: none;
   color: white;
+  font-size: 17px;
+  position: relative;
+    bottom: 20px;
+    right: 10px;
+} .asideLink::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+  } .asideLink:hover::after{
+      transform: translateX(-50%) scaleX(1);
+      transition: 0.3s;
+    }
+.asideLink:focus:before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  position: absolute;
+  left: -10px;
+    top: 1px;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  margin: 25px 0;
+  position: relative;
+}
+.asideImg{
+    position: relative;
+    left: 10px;
+}
+.navIcon{
+    width: 20px;
+    position: relative;
+    right: 25px;
+    bottom: 17px;
+}
+.asideUser{
+    background-color: rgb(0, 30, 60);
+    padding: 10px;
+    border-radius: 8px;
+}
+/*Nav*/
+/*Cart*/
+.cart{
+    width: 100%;
+    background-color:  rgb(0, 30, 60);
+    padding: 30px;
+    color: white;
+}
+.cartImg{
+    position: fixed;
+    right: 100px;
+}
+.col-1{
+    flex: 1;
+}
+.col-2{
+    flex: 2;
+    font-size: 22px;
+}
+.add{
+    background-color: #4aa3ff;
+    width: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.remove{
+    background-color: #ff3847;
+    width: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.badge{
+    width: 30px;
+    height: 30px;
+    background-color: #ff3847;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    position: fixed;
+    right: 57px;
+    top: 15px;
+}
+.cartItem{
+    display: flex;
+}
+.cartPrice{
+    display: flex;
+}
+.getBtn{
+    height: 50px;
+    background-color: #514a92;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+.cartForm{
+    position: relative;
+    right: 20px;
+    text-align: center;
+}
+.cartFormTitle{
+    text-align: center;
+}
+/*Cart*/
+.exitBtn{
+    background-color: rgb(0, 30, 60);
+    color: white;
+    font-size: 15px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    right: 80px;
+    top: 30px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

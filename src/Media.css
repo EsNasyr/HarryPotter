@@ -1,0 +1,37 @@
+@media (max-width: 480px) {
+    .contentWrapper {
+        max-width: 100%;
+    }
+    .mainImg{
+        max-width: 100%;
+    }
+    .section{
+        width: 100%;
+    }
+    .mainImgContentTitle{
+        font-size: 25px;
+    }
+    .mainImgContentLogo{
+        width: 100%;
+    }
+    .aside{
+        display: none;
+    }
+    .projectItems{
+        display: block;
+    }
+    .mainImgContent-2{
+        width: 100%;
+        position: absolute;
+        transform: translate(-0%, 191%);
+    }
+    .header{
+        display: flex;
+        height: 100px;
+        width: 100%;
+        position: relative;
+        left: 204px;
+        bottom: 8px;
+    }
+}
+
