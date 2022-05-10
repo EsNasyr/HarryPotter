@@ -12,6 +12,20 @@ const Reducer = (state, action) => {
             return {
                 user: null,
             }
+        //
+        //
+        case "REGISTER_START":
+            return {
+                user: null,
+            }
+        case "REGISTER_SUCCESS":
+            return {
+                user: action.payload,
+            }
+        case "REGISTER_FAILURE":
+            return {
+                user: null,
+            }
         case "LOGOUT":
             return {
                 user: null,

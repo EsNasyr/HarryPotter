@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { Context } from "../../Context/Context";
 import { Link } from "react-router-dom";
 import logoNav from "../../Images/icons8-harry-potter.svg"
@@ -14,6 +14,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import axios from "axios";
 
 const style = {
     position: 'absolute',
@@ -28,8 +29,8 @@ const style = {
 };
 
 const Nav = () => {
-    const {user} = useContext(Context)
-    const {dispatch} = useContext(Context)
+    const {user} = useContext(Context);
+    const {dispatch} = useContext(Context);
     const handleLogout = () => {
         dispatch({type: "LOGOUT"})
     }
@@ -65,7 +66,7 @@ const Nav = () => {
 
                                     </Typography>
                                     <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                        <p><strong>Имя:</strong> {user.name}</p>
+                                        <p><strong>Имя:</strong>{user.name}</p>
                                         <p><strong>Фамилие:</strong> {user.surname}</p>
                                         <p><strong>Почта:</strong> {user.email}</p>
                                     </Typography>

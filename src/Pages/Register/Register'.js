@@ -1,15 +1,18 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import axios from "axios";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
+import {Context} from "../../Context/Context";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
 const Register = () => {
+    const {dispatch, user} = useContext(Context)
+
     const [name, setName] = useState("")
     const [surname, setSurname] = useState("")
     const [email, setEmail] = useState("")
@@ -61,11 +64,26 @@ const Register = () => {
                         </ul>
                     </div>
                 </form>
-            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-                <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                    Вы успешно зарегестрировались!
-                </Alert>
-            </Snackbar>
+            {
+             user?
+                 (
+                     <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                         <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                             Вы успешно зарегестрировались!
+                         </Alert>
+                     </Snackbar>
+                 ) : null
+            }
+            {
+                !user?
+                    (
+                        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+                                Возможно эта электронная почта была использована ранее
+                            </Alert>
+                        </Snackbar>
+                    ) : null
+            }
         </section>
     );
 };

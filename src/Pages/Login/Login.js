@@ -59,11 +59,25 @@ const Login = () => {
                     </ul>
                 </div>
             </form>
-            <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-                <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                    Вы успешно вошли в аккаунт!
-                </Alert>
-            </Snackbar>
+            {
+                user ?
+                    (
+                        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                            <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+                                Вы успешно вошли в аккаунт!
+                            </Alert>
+                        </Snackbar>
+                    ) : null  }
+            {
+                !user ?
+                     (
+                        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                            <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+                                Уппс! Вы ввели неккоректные данные!
+                            </Alert>
+                        </Snackbar>
+                    ) :  null
+            }
         </section>
     );
 };
