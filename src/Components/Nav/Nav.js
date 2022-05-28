@@ -46,7 +46,7 @@ const Nav = () => {
                     <Link to="/"><img src={logoNav} alt="" className="asideImg"/></Link>
                     <ul>
                         <li><img src={homeIcon} className="navIcon" /><Link to="/" className="asideLink">Главная</Link></li>
-                        <li><img src={characterIcon} className="navIcon" /><Link to="/characters" className="asideLink">Персонажи</Link></li>
+                        {/*<li><img src={characterIcon} className="navIcon" /><Link to="/characters" className="asideLink">Персонажи</Link></li>*/}
                         <li><img src={bookIcon} className="navIcon" /><Link to="/books" className="asideLink">Книги</Link></li>
                         <li><img src={filmIcon} className="navIcon" /><Link to="/films" className="asideLink">Фильмы</Link></li>
                         <li><img src={storyIcon} className="navIcon" /><Link to="/things" className="asideLink">Теории</Link></li>
